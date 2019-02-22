@@ -17,5 +17,5 @@ I made this repository to reference it in a stackoverflow.com question because t
 
 
 
-##### The Bug appeared with me about 20 times out of 100 tries (on both a production server linux centos, and labtop linux fedora)
+##### The Bug appeared with me about 20 times out of 100 tries (on both a production server linux centos, and laptop linux fedora)
 
