@@ -25,9 +25,9 @@ class CurlMultiTimeoutBugTester
      * @param boolean $adjustMaxExecutiontime
      * @return string
      */
-    public function test($url = "https://www.example.com/", $connectTimeOut = 5, $maxRequests = 1000, $adjustMaxExecutiontime = true)
+    public function test($url = "https://www.example.com/", $connectTimeOut = 5, $maxRequests = 1000, $totalProxies = "*", $adjustMaxExecutiontime = true)
     {
-        $totalRequestsCount = count($this->proxies());
+        $totalRequestsCount = count($this->proxies($totalProxies));
         
         $expectedTime = ceil((($totalRequestsCount > $maxRequests ? $totalRequestsCount : $maxRequests) / $maxRequests))  * $connectTimeOut;
         
@@ -59,8 +59,8 @@ class CurlMultiTimeoutBugTester
         $report .= "url: $url\n";
         $report .= "maxRequests: $maxRequests\n";
         $report .= "connectTimeOut: $connectTimeOut\n";
-        $report .= "totalRequestsCount: $totalRequestsCount\n\n";
-        foreach($this->proxies() as $proxy){
+        $report .= "totalRequestsCount/totalProxies: $totalRequestsCount\n\n";
+        foreach($this->proxies($totalProxies) as $proxy){
             $x++;
             $dynamicCH = "ch" . $x;
             $$dynamicCH = curl_init( $url );
@@ -68,7 +68,7 @@ class CurlMultiTimeoutBugTester
             $options[CURLOPT_PROXYTYPE] = $proxy['type'] == "proxy4" ? CURLPROXY_SOCKS4  : CURLPROXY_HTTP;
             curl_setopt_array( $$dynamicCH, $options);
             curl_multi_add_handle($mh, $$dynamicCH);
-            $handles[] = ["ch" => $$dynamicCH, "proxy" => "{$proxy['ip']}:{$proxy['port']}"];
+            $handles[] = ["ch" => $$dynamicCH, "proxy" => "{$proxy['ip']}:{$proxy['port']}", "proxyType" => $proxy['type']];
             if($x % $maxRequests == 0 || $x >= $totalRequestsCount){
                 $flushTime = microtime(true);
                 //flush the group
@@ -81,7 +81,7 @@ class CurlMultiTimeoutBugTester
                         $isError = true;
                         $errors++;
                     }
-                    $report .= $handle["proxy"] . " err:\"$err\", total_time:" . $info["total_time"] .
+                    $report .= $handle["proxy"] . " ({$handle['proxyType']}) err:\"$err\", total_time:" . $info["total_time"] .  
                     ( $isError ? "  <=================   BUG " : "") . "\n";
                     curl_multi_remove_handle($mh, $handle["ch"]);
                 }
@@ -103,13 +103,13 @@ class CurlMultiTimeoutBugTester
      * (all https and socks4 and their anonymity level are elite and anonymous) checked on 2019-02-21
      * @return string[][]
      */
-    public function proxies()
+    public function proxies($limit = "*")
     {
-      return [
+      $proxies =  [
           ["ip" => "83.167.203.174", "port" => 44848, "type" => "https"],
           ["ip" => "83.219.1.80", "port" => 56004, "type" => "https"],
-          
           ["ip" => "83.239.97.26", "port" => 50223, "type" => "https"],
+          
           ["ip" => "84.241.19.214", "port" => 4145, "type" => "socks4"],
           ["ip" => "85.11.66.137", "port" => 55886, "type" => "https"],
           ["ip" => "85.52.217.114", "port" => 42544, "type" => "https"],
@@ -513,9 +513,15 @@ class CurlMultiTimeoutBugTester
           ["ip" => "213.87.42.53", "port" => 40367, "type" => "https"],
           ["ip" => "213.174.6.207", "port" => 43935, "type" => "socks4"],
           ["ip" => "217.113.17.226", "port" => 50948, "type" => "https"],
-          ["ip" => "221.120.163.242", "port" => 56969, "type" => "https"] 
+          ["ip" => "221.120.163.242", "port" => 56969, "type" => "https"]
           
       ];
+      
+      if($limit == "*") return $proxies;
+      $limit = (int)$limit;
+      if((int)$limit > count($proxies)) throw new \InvalidArgumentException('limit is more than array count');
+      return array_slice($proxies, 0, $limit);
+      
     }
     
     protected function executeMultiCurl($mh)
