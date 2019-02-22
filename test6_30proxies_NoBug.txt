@@ -1,0 +1,41 @@
+DateTime now in UTC 2019-02-22 18:40:17
+url: https://www.example.com/
+maxRequests: 1000
+connectTimeOut: 2
+totalRequestsCount/totalProxies: 30
+
+83.167.203.174:44848 (https) err:"Failed to connect to 83.167.203.174 port 44848: Connection refused", total_time:0.222983
+83.219.1.80:56004 (https) err:"Failed to connect to 83.219.1.80 port 56004: Connection refused", total_time:0.140337
+83.239.97.26:50223 (https) err:"Failed to connect to 83.239.97.26 port 50223: Connection refused", total_time:0.140259
+84.241.19.214:4145 (socks4) err:"Connection timed out after 2959 milliseconds", total_time:2.958793
+85.11.66.137:55886 (https) err:"SSL connection timeout", total_time:1.780152
+85.52.217.114:42544 (https) err:"Failed to connect to 85.52.217.114 port 42544: Connection refused", total_time:0.127454
+85.193.216.85:59205 (https) err:"Failed to connect to 85.193.216.85 port 59205: Connection refused", total_time:0.12738
+85.193.229.6:57712 (https) err:"Failed to connect to 85.193.229.6 port 57712: Connection refused", total_time:0.002062
+85.198.135.180:54630 (https) err:"Proxy CONNECT aborted due to timeout", total_time:1.519367
+86.38.39.21:54703 (https) err:"Failed to connect to 86.38.39.21 port 54703: Connection refused", total_time:0.329517
+86.100.77.210:53281 (https) err:"Connection time-out", total_time:1.519203
+87.244.182.181:32598 (https) err:"Proxy CONNECT aborted due to timeout", total_time:1.519131
+88.146.243.106:35852 (https) err:"SSL connection timeout", total_time:2.956898
+88.150.135.10:36624 (https) err:"Connection time-out", total_time:1.702197
+88.255.251.163:8080 (https) err:"Proxy CONNECT aborted due to timeout", total_time:1.702127
+89.67.144.213:55605 (https) err:"Connection time-out", total_time:1.70204
+89.111.104.2:41258 (https) err:"Connection time-out", total_time:1.70195
+89.189.189.115:59249 (https) err:"Failed to connect to 89.189.189.115 port 59249: Connection refused", total_time:0.205073
+89.231.32.226:55466 (socks4) err:"Connection time-out", total_time:1.701789
+91.139.1.158:37504 (https) err:"Proxy CONNECT aborted due to timeout", total_time:1.701704
+77.120.75.131:35911 (https) err:"Connection time-out", total_time:1.70162
+77.222.20.246:47888 (https) err:"Connection time-out", total_time:1.701546
+78.128.124.9:47654 (https) err:"Connection time-out", total_time:1.701473
+78.132.136.40:32431 (https) err:"Connection time-out", total_time:1.701392
+78.187.50.200:30852 (https) err:"Failed to connect to 78.187.50.200 port 30852: Connection refused", total_time:0.248127
+79.78.184.12:56834 (https) err:"Proxy CONNECT aborted due to timeout", total_time:1.701144
+79.106.35.253:8080 (https) err:"Proxy CONNECT aborted due to timeout", total_time:1.701071
+79.106.41.15:35876 (https) err:"", total_time:1.498475
+80.55.32.238:59513 (https) err:"Connection time-out", total_time:1.70093
+80.71.112.51:55243 (socks4) err:"Proxy CONNECT aborted", total_time:0.407927
+======================================= Flushed(execute and remove all handles). time: 2.9625370502472 seconds
+
+
+function took:3.0629742145538
+ Bug reproduced: 0 times
