@@ -1,3 +1,4 @@
+<?php
 /**
  * testing the curlmulti interface with many public proxies in the same time
  * cause cURL to time out for some requests with total_time info that is less that the CURLOPT_CONNECTTIMEOUT option
