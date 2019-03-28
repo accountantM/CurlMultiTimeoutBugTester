@@ -1,4 +1,4 @@
-these are tests for the public proxy servers made using curl_multi interface and curl threads C programs ordered by test time. 
+these are tests for the public proxy servers made using curl_multi interface and curl threads [C programs](https://github.com/accountantM/CurlMultiTimeoutBugTester/tree/master/C%20programs) ordered by test time. 
 Each line represents a 407 requests made to 407 proxies to get the url https://www.example.com with CONNECTION_TIMEOUT = 30 s
 The purbose of these requests is to count how many proxies are working (errno 0) and how many timeouts (errno 28).
 As a try to reproduce the problem of "SOMETIMES (curl_multi timeout toooo many proxies while they are working)"
