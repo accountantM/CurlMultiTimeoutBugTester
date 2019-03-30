@@ -1,6 +1,6 @@
 /***************************************************************************
  *
- *  Project    curl-threads-tester
+ *  Project    curl-multi-tester
  *
  ***************************************************************************/
 #include <stdio.h>
@@ -18,7 +18,7 @@
 extern struct one proxies[];
 
 
-int writeSummeryToFile = 0;
+int writeSummaryToFile = 0;
 int printToConsole = 1;
 
 #define MAX_REQUESTS 1000
@@ -67,8 +67,8 @@ int main(int argc, char *argv[])
     if(argc > 1 && !strcmp(argv[1], "-noprintToConsole")) printToConsole = 0;
     else printToConsole = 1;//default
 
-    if(argc > 2 && !strcmp(argv[2], "-writeSummeryToFile")) writeSummeryToFile = 1;
-    else writeSummeryToFile = 0;//default
+    if(argc > 2 && !strcmp(argv[2], "-writeSummaryToFile")) writeSummaryToFile = 1;
+    else writeSummaryToFile = 0;//default
 
     setenv("TZ", "UTC", 1);
     tzset();
@@ -195,12 +195,7 @@ int main(int argc, char *argv[])
 
         // " 2019-02-24 18:12:44  https://www.example.com 1000    3   407 242 23.365744829178 ";
 
-        /*
-        sprintf( line,"%s\thttps://www.example.com\t1000\t30\t407\ttime:%d"
-                "\tnoErrorsCount: %d, error28Cout: %d, error7Count: %d, "
-                "error35Count: %d, error56Count: %d, errorOtherCount: %d\n",
-              now, time2, noError, error28 , error7, error35, error56, errorOther);
-        */
+       
         sprintf( line,"%s\t%d\t%d\t%d\t%d\t%d\t%d\t%d\n",
               now, time2, noError, error28 , error7, error35, error56, errorOther);
 
