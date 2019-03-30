@@ -18,7 +18,7 @@
 extern struct one proxies[];
 
 
-int writeSummeryToFile = 0;
+int writeSummaryToFile = 0;
 int printToConsole = 1;
 
 #define MAX_REQUESTS 1000
@@ -140,38 +140,14 @@ void *myThreadFun(void *vargp)
 
 
 
-/*
-
-
-
-
-0,2,4,6,8,10,12,14,16,18,20,22,24,26,28,30,32,34,36,38,40,42,44,46,48,50,52,54,56,58 * * * *
-cd /home/mreda/C-programs/curl-threads-tester/Debug/ && ./curl-threads-tester
->>/home/mreda/my-cron-logs.log 2>&1
-
-
-
-1,3,5,7,9,11,13,15,17,19,21,23,25,27,29,31,33,35,37,39,41,43,45,47,49,51,53,55,57,59 * * * *
-cd /home/mreda/C-programs/curl-multi-tester/Debug/ && ./curl-multi-tester
->>/home/mreda/my-cron-logs.log 2>&1
-
-
-
-
-
-
-
-
-
- */
 int main( int argc, char *argv[])
 {
 
     if(argc > 1 && !strcmp(argv[1], "-noprintToConsole")) printToConsole = 0;
     else printToConsole = 1;//default
 
-    if(argc > 2 && !strcmp(argv[2], "-writeSummeryToFile")) writeSummeryToFile = 1;
-    else writeSummeryToFile = 0;//default
+    if(argc > 2 && !strcmp(argv[2], "-writeSummaryToFile")) writeSummaryToFile = 1;
+    else writeSummaryToFile = 0;//default
 
     int added = 0;
     time_t begin = time(NULL);
@@ -228,12 +204,7 @@ int main( int argc, char *argv[])
 
         // " 2019-02-24 18:12:44  https://www.example.com 1000    3   407 242 23.365744829178 ";
 
-        /*
-        sprintf( line,"%s\thttps://www.example.com\t1000\t30\t407\ttime:%d"
-                "\tnoErrorsCount: %d, error28Cout: %d, error7Count: %d, "
-                "error35Count: %d, error56Count: %d, errorOtherCount: %d\n",
-              now, time2, noError, error28 , error7, error35, error56, errorOther);
-        */
+        
         sprintf( line,"%s\t%d\t%d\t%d\t%d\t%d\t%d\t%d\n",
               now, time2, noError, error28 , error7, error35, error56, errorOther);
 
@@ -243,77 +214,5 @@ int main( int argc, char *argv[])
     }
 
     return 0;
-
-/*
-  CURLM *mh;
-  int still_running = 0; // keep number of running handles
-
-
-  int added = 0;
-
-  // init a multi stack
-
-
-  mh = curl_multi_init();
-  do {
-    CURLMcode mc; // curl_multi_wait() return code
-
-
-    int numfds;
-    CURLMsg *msg;
-    int msgs_left;
-
-    while(proxies[added].ip && (still_running < N_PARALLEL)) {
-      CURL *e = curl_easy_init();
-      char proxybuf[128];
-      char *errormsg = malloc(CURL_ERROR_SIZE);
-      snprintf(proxybuf, sizeof(proxybuf), "%s:%u",
-               proxies[added].ip, proxies[added].port);
-
-      curl_easy_setopt(e, CURLOPT_URL, "https://www.example.com/");
-      curl_easy_setopt(e, CURLOPT_CONNECTTIMEOUT_MS, 3000L);
-      curl_easy_setopt(e, CURLOPT_TIMEOUT_MS, 4000L);
-      curl_easy_setopt(e, CURLOPT_PROXY, proxybuf);
-      curl_easy_setopt(e, CURLOPT_PROXYTYPE, proxies[added].type);
-      curl_easy_setopt(e, CURLOPT_ERRORBUFFER, errormsg);
-      curl_easy_setopt(e, CURLOPT_PRIVATE, errormsg);
-      curl_multi_add_handle(mh, e);
-      still_running++;
-      added++;
-    }
-
-    fprintf(stderr, "Perform %d parallel transfers\n", still_running);
-
-    // we start some action by calling perform right away
-
-
-    curl_multi_perform(mh, &still_running);
-
-    while ((msg = curl_multi_info_read(mh, &msgs_left))) {
-      if (msg->msg == CURLMSG_DONE) {
-        CURL *e = msg->easy_handle;
-        char *err;
-        curl_easy_getinfo(e, CURLINFO_PRIVATE, &err);
-        if(msg->data.result != CURLE_OK) {
-          fprintf(stderr, "returned: %d - %s\n", msg->data.result, err);
-        }
-        free(err);
-        curl_multi_remove_handle(mh, e);
-        curl_easy_cleanup(e);
-      }
-    }
-
-    // wait for activity, timeout or "nothing"
-
-
-    mc = curl_multi_wait(mh, NULL, 0, 1000, &numfds);
-    if(mc != CURLM_OK) {
-      fprintf(stderr, "curl_multi_wait() failed, code %d.\n", mc);
-      break;
-    }
-  } while(still_running);
-
-  curl_multi_cleanup(mh);
-*/
 
 }
