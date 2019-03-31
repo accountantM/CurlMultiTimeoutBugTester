@@ -1,0 +1,414 @@
+93.116.57.4:55674	7	Couldn't connect to server
+141.101.236.49:56000	7	Couldn't connect to server
+103.248.31.244:4145	7	Couldn't connect to server
+93.87.66.66:61831	7	Couldn't connect to server
+85.193.229.6:57712	7	Couldn't connect to server
+176.98.76.210:45280	7	Couldn't connect to server
+94.228.21.66:55295	7	Couldn't connect to server
+185.80.130.78:3128	7	Couldn't connect to server
+80.249.229.64:42186	7	Couldn't connect to server
+91.230.199.174:60926	7	Couldn't connect to server
+46.228.199.70:3128	7	Couldn't connect to server
+88.150.135.10:36624	7	Couldn't connect to server
+85.52.217.114:42544	7	Couldn't connect to server
+91.228.32.70:6969	7	Couldn't connect to server
+168.181.121.195:51514	7	Couldn't connect to server
+157.230.43.245:8888	7	Couldn't connect to server
+18.228.217.208:80	7	Couldn't connect to server
+181.196.147.98:45882	7	Couldn't connect to server
+95.140.27.135:60275	7	Couldn't connect to server
+178.124.152.84:52676	7	Couldn't connect to server
+101.255.124.202:42608	7	Couldn't connect to server
+95.31.32.102:34233	7	Couldn't connect to server
+197.248.224.242:80	7	Couldn't connect to server
+93.87.51.138:23500	7	Couldn't connect to server
+81.163.62.221:31299	7	Couldn't connect to server
+185.194.24.187:37854	7	Couldn't connect to server
+93.177.150.112:45186	7	Couldn't connect to server
+197.232.55.224:39385	7	Couldn't connect to server
+128.201.240.245:4145	7	Couldn't connect to server
+183.81.157.178:52555	7	Couldn't connect to server
+103.75.32.132:53130	7	Couldn't connect to server
+163.53.150.230:30195	7	Couldn't connect to server
+109.245.214.49:42004	7	Couldn't connect to server
+182.53.206.40:52214	7	Couldn't connect to server
+176.103.45.27:46994	7	Couldn't connect to server
+119.82.253.155:37436	7	Couldn't connect to server
+176.119.18.92:30996	7	Couldn't connect to server
+95.66.140.121:59078	7	Couldn't connect to server
+212.72.159.174:50323	7	Couldn't connect to server
+95.38.211.185:4145	7	Couldn't connect to server
+94.190.190.254:46269	7	Couldn't connect to server
+83.239.97.26:50223	7	Couldn't connect to server
+203.17.150.95:38498	7	Couldn't connect to server
+101.109.255.243:50098	7	Couldn't connect to server
+83.167.203.174:44848	7	Couldn't connect to server
+96.9.91.27:53523	7	Couldn't connect to server
+78.187.50.200:30852	7	Couldn't connect to server
+168.205.84.55:4145	7	Couldn't connect to server
+178.217.168.77:46062	7	Couldn't connect to server
+118.173.232.43:48204	7	Couldn't connect to server
+1.10.186.157:51976	7	Couldn't connect to server
+203.142.69.242:47619	7	Couldn't connect to server
+116.212.152.128:36041	7	Couldn't connect to server
+36.67.27.189:53323	7	Couldn't connect to server
+83.13.63.38:60860	7	Couldn't connect to server
+103.229.177.51:45275	7	Couldn't connect to server
+118.174.234.129:54431	7	Couldn't connect to server
+172.96.224.179:80	7	Couldn't connect to server
+177.66.53.203:43493	7	Couldn't connect to server
+103.71.255.10:51242	7	Couldn't connect to server
+92.246.220.206:40396	7	Couldn't connect to server
+85.193.216.85:59205	7	Couldn't connect to server
+36.89.81.129:53732	7	Couldn't connect to server
+91.214.240.19:50481	7	Couldn't connect to server
+95.87.127.133:50594	7	Couldn't connect to server
+24.172.34.114:52143	7	Couldn't connect to server
+5.58.152.226:60583	7	Couldn't connect to server
+154.0.15.166:49713	7	Couldn't connect to server
+159.192.97.83:55938	7	Couldn't connect to server
+1.20.97.166:32588	7	Couldn't connect to server
+143.0.140.200:3128	7	Couldn't connect to server
+200.5.35.234:4145	7	Couldn't connect to server
+195.239.178.110:40448	7	Couldn't connect to server
+187.111.192.142:30485	7	Couldn't connect to server
+94.102.124.207:35836	7	Couldn't connect to server
+139.255.64.10:41309	7	Couldn't connect to server
+203.76.147.26:45684	7	Couldn't connect to server
+68.183.185.17:8888	7	Couldn't connect to server
+138.186.172.222:33109	7	Couldn't connect to server
+103.255.148.26:35242	7	Couldn't connect to server
+109.87.193.112:33620	7	Couldn't connect to server
+94.179.130.34:41293	7	Couldn't connect to server
+94.180.245.1:61251	7	Couldn't connect to server
+182.253.233.10:8080	7	Couldn't connect to server
+118.172.201.109:54347	7	Couldn't connect to server
+125.27.251.208:30753	7	Couldn't connect to server
+46.151.108.6:33727	7	Couldn't connect to server
+110.172.135.234:53822	7	Couldn't connect to server
+110.235.198.3:57660	7	Couldn't connect to server
+190.107.20.203:4145	7	Couldn't connect to server
+46.99.179.81:48746	7	Couldn't connect to server
+111.92.243.154:37539	7	Couldn't connect to server
+110.74.219.10:30906	7	Couldn't connect to server
+1.20.99.185:44450	7	Couldn't connect to server
+177.75.143.198:43223	7	Couldn't connect to server
+170.210.236.1:34792	7	Couldn't connect to server
+36.67.199.89:47923	7	Couldn't connect to server
+45.63.51.89:80	7	Couldn't connect to server
+103.205.27.46:52311	7	Couldn't connect to server
+103.76.188.209:45190	7	Couldn't connect to server
+41.217.216.45:50951	7	Couldn't connect to server
+110.36.218.126:36651	7	Couldn't connect to server
+117.196.236.162:43989	7	Couldn't connect to server
+96.9.73.79:61057	7	Couldn't connect to server
+165.90.211.69:61692	7	Couldn't connect to server
+203.177.133.148:44632	7	Couldn't connect to server
+202.3.72.6:38725	7	Couldn't connect to server
+212.28.237.131:59588	7	Couldn't connect to server
+103.192.169.186:35865	7	Couldn't connect to server
+200.35.49.73:45186	7	Couldn't connect to server
+103.28.243.11:37120	7	Couldn't connect to server
+213.6.199.94:41320	7	Couldn't connect to server
+41.78.172.20:61169	7	Couldn't connect to server
+118.175.93.28:61285	7	Couldn't connect to server
+176.196.238.234:44648	7	Couldn't connect to server
+202.84.79.11:41247	7	Couldn't connect to server
+196.32.109.73:56930	7	Couldn't connect to server
+202.49.183.168:30309	7	Couldn't connect to server
+175.100.5.52:45940	7	Couldn't connect to server
+217.113.17.226:50948	7	Couldn't connect to server
+200.195.188.2:32954	7	Couldn't connect to server
+163.53.182.148:39486	7	Couldn't connect to server
+176.111.10.136:46560	7	Couldn't connect to server
+190.193.8.28:9999	7	Couldn't connect to server
+1.10.188.12:35573	7	Couldn't connect to server
+1.20.100.42:47962	7	Couldn't connect to server
+43.229.27.175:8080	7	Couldn't connect to server
+167.99.79.1:31330	7	Couldn't connect to server
+1.10.186.48:38104	7	Couldn't connect to server
+113.53.83.157:35969	7	Couldn't connect to server
+178.128.58.122:8080	7	Couldn't connect to server
+110.74.196.9:54848	7	Couldn't connect to server
+103.75.34.121:46210	7	Couldn't connect to server
+186.30.57.251:48786	7	Couldn't connect to server
+192.140.42.82:39448	7	Couldn't connect to server
+203.174.15.234:40604	7	Couldn't connect to server
+1.10.188.205:43580	7	Couldn't connect to server
+45.64.122.210:58181	7	Couldn't connect to server
+118.175.93.164:37694	7	Couldn't connect to server
+67.226.65.195:80	56	Failure when receiving data from the peer
+125.209.108.26:53126	7	Couldn't connect to server
+36.37.109.205:808	35	SSL connect error
+103.94.169.114:30372	7	Couldn't connect to server
+202.57.55.242:52634	7	Couldn't connect to server
+103.76.188.85:44827	7	Couldn't connect to server
+203.81.176.254:49901	7	Couldn't connect to server
+89.231.32.226:55466	7	Couldn't connect to server
+83.219.1.80:56004	7	Couldn't connect to server
+5.140.233.249:33455	7	Couldn't connect to server
+81.16.10.141:59352	7	Couldn't connect to server
+131.108.63.213:57604	7	Couldn't connect to server
+178.128.123.20:8888	7	Couldn't connect to server
+185.112.249.187:3128	7	Couldn't connect to server
+124.41.211.231:49949	7	Couldn't connect to server
+208.98.185.89:53630	56	Failure when receiving data from the peer
+103.221.254.2:36778	7	Couldn't connect to server
+176.98.75.120:45259	7	Couldn't connect to server
+177.223.52.242:42363	7	Couldn't connect to server
+178.75.58.58:41514	7	Couldn't connect to server
+12.189.124.100:44791	7	Couldn't connect to server
+201.234.253.24:59238	7	Couldn't connect to server
+200.71.123.185:34343	7	Couldn't connect to server
+177.220.171.54:60729	7	Couldn't connect to server
+115.178.27.125:48497	7	Couldn't connect to server
+118.173.232.5:55124	7	Couldn't connect to server
+36.37.163.220:23500	7	Couldn't connect to server
+81.174.247.181:8118	7	Couldn't connect to server
+221.120.163.242:56969	7	Couldn't connect to server
+103.115.100.246:47788	7	Couldn't connect to server
+170.79.122.194:4145	7	Couldn't connect to server
+103.76.170.50:60240	7	Couldn't connect to server
+103.110.184.163:40186	7	Couldn't connect to server
+122.102.41.82:56067	7	Couldn't connect to server
+187.1.43.246:53396	7	Couldn't connect to server
+138.122.5.22:61201	7	Couldn't connect to server
+178.170.254.178:46788	7	Couldn't connect to server
+50.7.106.228:48823	0	No error
+92.244.36.66:60789	0	No error
+91.203.115.21:45644	0	No error
+46.20.93.83:41258	0	No error
+188.186.182.125:4145	0	No error
+50.226.80.129:42741	0	No error
+182.16.163.138:8080	0	No error
+188.121.103.187:4145	0	No error
+37.53.83.40:50887	0	No error
+200.255.122.170:8080	0	No error
+92.39.56.15:61917	0	No error
+50.7.105.69:48823	0	No error
+80.191.162.51:44199	0	No error
+198.144.108.36:54321	0	No error
+185.136.151.20:58371	7	Couldn't connect to server
+138.36.108.30:4145	0	No error
+119.82.252.115:49085	0	No error
+92.62.66.161:4145	0	No error
+80.71.112.51:55243	0	No error
+91.218.163.74:50517	0	No error
+114.35.29.247:42313	0	No error
+203.160.58.117:4145	0	No error
+103.106.148.200:53712	7	Couldn't connect to server
+124.41.211.213:54986	7	Couldn't connect to server
+122.176.65.143:42175	7	Couldn't connect to server
+31.29.62.188:4145	0	No error
+118.173.232.190:13629	0	No error
+103.243.82.234:59063	0	No error
+103.109.93.25:44550	0	No error
+195.39.71.252:56935	7	Couldn't connect to server
+103.10.61.106:59733	0	No error
+103.15.140.138:42584	0	No error
+103.92.153.17:57408	0	No error
+36.37.124.234:36179	0	No error
+202.57.49.193:4145	0	No error
+213.174.6.207:43935	0	No error
+103.85.19.169:39856	0	No error
+170.79.123.26:4145	0	No error
+41.216.230.154:56673	0	No error
+103.226.142.90:47460	0	No error
+103.194.240.54:53908	0	No error
+170.231.140.150:4145	0	No error
+202.93.226.170:4145	0	No error
+170.0.124.161:4145	0	No error
+213.6.67.86:32586	0	No error
+170.80.52.33:4145	0	No error
+86.100.77.210:53281	0	No error
+175.100.185.151:53281	0	No error
+113.108.242.36:32655	0	No error
+103.91.120.65:40540	0	No error
+80.240.253.112:50530	7	Couldn't connect to server
+149.255.243.78:51372	0	No error
+200.7.205.194:51910	7	Couldn't connect to server
+103.12.246.65:4145	0	No error
+103.21.231.131:53281	0	No error
+190.128.135.130:44915	0	No error
+103.106.56.33:4145	0	No error
+183.81.158.106:4145	0	No error
+193.59.101.12:4145	0	No error
+103.211.8.125:4145	0	No error
+119.252.175.38:4550	0	No error
+170.0.112.199:50294	0	No error
+103.78.164.1:4145	0	No error
+170.0.112.226:50294	0	No error
+154.41.2.154:13538	0	No error
+62.74.230.146:40018	0	No error
+103.99.161.17:4145	7	Couldn't connect to server
+103.81.104.121:4145	0	No error
+202.57.39.126:4145	0	No error
+186.38.39.22:39524	0	No error
+103.77.23.202:59311	0	No error
+84.241.19.214:4145	28	Timeout was reached
+87.244.182.181:32598	28	Timeout was reached
+86.38.39.21:54703	28	Timeout was reached
+88.146.243.106:35852	28	Timeout was reached
+31.145.137.166:4145	28	Timeout was reached
+80.55.32.238:59513	28	Timeout was reached
+91.200.125.248:4145	28	Timeout was reached
+182.52.51.15:33680	28	Timeout was reached
+202.178.125.99:33853	28	Timeout was reached
+65.173.110.238:37252	28	Timeout was reached
+89.67.144.213:55605	28	Timeout was reached
+103.237.174.82:55326	28	Timeout was reached
+196.18.215.37:3128	28	Timeout was reached
+80.211.154.106:8080	28	Timeout was reached
+103.226.227.218:43010	28	Timeout was reached
+36.89.227.50:53281	28	Timeout was reached
+182.253.201.10:36776	28	Timeout was reached
+94.240.46.195:23500	28	Timeout was reached
+176.120.211.176:58035	28	Timeout was reached
+79.106.35.253:8080	28	Timeout was reached
+93.171.241.18:45781	28	Timeout was reached
+36.89.190.217:45170	28	Timeout was reached
+45.114.144.106:23500	28	Timeout was reached
+196.18.215.75:3128	28	Timeout was reached
+88.255.251.163:8080	28	Timeout was reached
+95.47.180.171:53484	28	Timeout was reached
+103.108.62.14:49271	28	Timeout was reached
+189.127.35.51:41615	28	Timeout was reached
+159.192.97.181:23500	28	Timeout was reached
+3.8.121.95:80	28	Timeout was reached
+128.40.76.198:80	28	Timeout was reached
+41.162.117.37:8080	28	Timeout was reached
+43.229.252.45:53281	28	Timeout was reached
+185.162.57.251:80	28	Timeout was reached
+195.177.75.106:30297	28	Timeout was reached
+185.59.244.161:41258	28	Timeout was reached
+170.245.173.87:4145	28	Timeout was reached
+196.38.8.91:8080	28	Timeout was reached
+37.19.94.86:4145	28	Timeout was reached
+77.222.20.246:47888	28	Timeout was reached
+96.9.69.230:53281	28	Timeout was reached
+187.87.241.25:53386	28	Timeout was reached
+182.52.51.181:3629	28	Timeout was reached
+103.107.163.129:51327	28	Timeout was reached
+103.106.216.21:21913	28	Timeout was reached
+213.87.42.53:40367	28	Timeout was reached
+89.189.189.115:59249	28	Timeout was reached
+119.235.19.42:38546	28	Timeout was reached
+196.201.206.129:55625	28	Timeout was reached
+91.195.131.242:4145	28	Timeout was reached
+190.248.13.19:50553	28	Timeout was reached
+130.193.112.146:36923	28	Timeout was reached
+78.132.136.40:32431	28	Timeout was reached
+202.61.52.14:60267	28	Timeout was reached
+95.181.35.30:40804	28	Timeout was reached
+95.79.54.143:80	28	Timeout was reached
+85.198.135.180:54630	28	Timeout was reached
+194.67.37.90:3128	28	Timeout was reached
+115.127.39.66:55474	28	Timeout was reached
+103.94.7.254:4145	28	Timeout was reached
+190.7.141.66:47231	28	Timeout was reached
+18.219.3.105:80	28	Timeout was reached
+138.186.122.105:43602	28	Timeout was reached
+110.74.193.235:53569	28	Timeout was reached
+118.179.69.233:44505	28	Timeout was reached
+18.220.245.122:80	28	Timeout was reached
+35.196.70.16:80	28	Timeout was reached
+196.18.215.160:3128	28	Timeout was reached
+169.255.67.244:37804	28	Timeout was reached
+118.179.84.106:34236	28	Timeout was reached
+91.235.7.216:59067	28	Timeout was reached
+62.232.2.98:53281	28	Timeout was reached
+177.66.255.232:61798	28	Timeout was reached
+85.11.66.137:55886	28	Timeout was reached
+2.92.242.230:40014	28	Timeout was reached
+92.244.36.68:47150	28	Timeout was reached
+190.53.46.14:38618	28	Timeout was reached
+91.139.1.158:37504	28	Timeout was reached
+105.255.223.2:8080	28	Timeout was reached
+51.38.71.101:8080	28	Timeout was reached
+188.130.240.17:52343	28	Timeout was reached
+182.75.21.30:46527	28	Timeout was reached
+31.200.228.169:37293	28	Timeout was reached
+122.15.131.65:57873	28	Timeout was reached
+46.164.149.40:36551	28	Timeout was reached
+128.201.97.156:53281	28	Timeout was reached
+212.154.200.6:80	28	Timeout was reached
+181.129.39.2:29792	28	Timeout was reached
+31.173.211.114:43873	28	Timeout was reached
+166.249.54.244:55867	28	Timeout was reached
+103.73.86.67:8080	28	Timeout was reached
+178.32.59.233:53281	28	Timeout was reached
+181.113.17.230:59067	28	Timeout was reached
+1.10.187.6:31097	28	Timeout was reached
+176.221.112.82:52094	28	Timeout was reached
+188.233.188.128:31244	28	Timeout was reached
+109.225.41.174:47234	28	Timeout was reached
+3.8.44.17:80	28	Timeout was reached
+131.255.4.49:10770	28	Timeout was reached
+134.0.16.6:47631	28	Timeout was reached
+197.245.152.245:38173	28	Timeout was reached
+139.178.127.128:4145	28	Timeout was reached
+31.42.254.24:30912	28	Timeout was reached
+89.111.104.2:41258	28	Timeout was reached
+196.18.215.239:3128	28	Timeout was reached
+13.233.72.134:80	28	Timeout was reached
+196.18.215.72:3128	28	Timeout was reached
+1.20.99.176:47005	28	Timeout was reached
+124.41.213.203:55187	28	Timeout was reached
+196.18.215.230:3128	28	Timeout was reached
+5.157.115.235:3128	28	Timeout was reached
+34.244.2.233:8123	28	Timeout was reached
+168.232.198.25:32009	28	Timeout was reached
+178.150.242.139:36086	28	Timeout was reached
+176.214.81.106:41774	28	Timeout was reached
+41.170.11.226:46093	28	Timeout was reached
+77.120.75.131:35911	28	Timeout was reached
+191.102.104.2:80	28	Timeout was reached
+81.199.32.214:60172	28	Timeout was reached
+170.80.17.129:40336	28	Timeout was reached
+58.68.228.234:1234	28	Timeout was reached
+5.128.32.12:51959	28	Timeout was reached
+78.128.124.9:47654	28	Timeout was reached
+42.115.39.70:49236	28	Timeout was reached
+180.247.199.128:8080	28	Timeout was reached
+5.19.142.82:37589	28	Timeout was reached
+124.41.240.56:50526	28	Timeout was reached
+79.78.184.12:56834	28	Timeout was reached
+51.254.182.52:61133	28	Timeout was reached
+170.79.121.38:4145	7	Couldn't connect to server
+68.183.17.69:8080	28	Timeout was reached
+178.92.9.210:3128	28	Timeout was reached
+60.46.17.210:3128	28	Timeout was reached
+181.191.241.179:33670	28	Timeout was reached
+103.206.201.179:37938	28	Timeout was reached
+194.169.164.3:57562	28	Timeout was reached
+31.46.30.228:51579	28	Timeout was reached
+113.11.47.242:40071	28	Timeout was reached
+193.160.226.89:53186	28	Timeout was reached
+36.67.27.29:56125	28	Timeout was reached
+181.112.57.34:60148	28	Timeout was reached
+195.128.119.233:4145	7	Couldn't connect to server
+190.248.136.18:53963	28	Timeout was reached
+66.96.237.71:36582	28	Timeout was reached
+203.129.195.183:80	28	Timeout was reached
+83.2.189.66:38011	28	Timeout was reached
+181.196.77.70:53281	28	Timeout was reached
+91.237.161.141:45311	28	Timeout was reached
+210.3.215.56:8080	28	Timeout was reached
+92.115.102.133:53281	28	Timeout was reached
+31.223.245.183:4145	28	Timeout was reached
+190.152.5.126:53040	28	Timeout was reached
+208.77.8.25:54321	28	Timeout was reached
+197.98.180.162:61047	28	Timeout was reached
+79.106.41.15:35876	28	Timeout was reached
+213.23.110.196:8080	28	Timeout was reached
+210.16.120.108:3128	28	Timeout was reached
+212.90.162.54:50819	28	Timeout was reached
+206.189.137.227:3128	28	Timeout was reached
+181.113.135.254:52058	28	Timeout was reached
+error 0:63
+error 7:183
+error 28:158
+error 35:1
+error 56:2
+total:407
+added:407
