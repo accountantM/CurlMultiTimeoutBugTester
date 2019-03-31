@@ -99,13 +99,14 @@ void *myThreadFun(void *vargp)
         // Check for errors
 
         if(res != CURLE_OK){
+            ++index;
             if(printToConsole){
-                fprintf(stderr, "%d- %s > ERROR(%d) %s\n", ++index, proxybuf,
+                fprintf(stderr, "%s\t%d\t%s\n" , proxybuf,
                         res, curl_easy_strerror(res));
             }
         }else{
             if(printToConsole){
-                fprintf(stderr, "%d- %s > NO ERROR(%d) %s\n", ++index, proxybuf,
+                fprintf(stderr, "%s\t%d\t%s\n", proxybuf,
                         res, curl_easy_strerror(res));
             }
         }
@@ -192,7 +193,7 @@ int main( int argc, char *argv[])
     int errorOther = added - (noError + error7 + error28 + error35 + error56);
 
 
-    if(writeSummeryToFile){
+    if(writeSummaryToFile){
         char now[200];
         char line[50000];
 
@@ -202,9 +203,8 @@ int main( int argc, char *argv[])
         sprintf(now, "%d-%d-%d %d:%d:%d", tm.tm_year + 1900, tm.tm_mon + 1,
                 tm.tm_mday, tm.tm_hour, tm.tm_min, tm.tm_sec);
 
-        // " 2019-02-24 18:12:44  https://www.example.com 1000    3   407 242 23.365744829178 ";
 
-        
+
         sprintf( line,"%s\t%d\t%d\t%d\t%d\t%d\t%d\t%d\n",
               now, time2, noError, error28 , error7, error35, error56, errorOther);
 
@@ -214,5 +214,7 @@ int main( int argc, char *argv[])
     }
 
     return 0;
+
+
 
 }
