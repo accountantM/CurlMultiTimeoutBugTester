@@ -60,7 +60,10 @@ int errorOther = 0;
 
 
 //functions
-
+typedef struct returnData{
+    char* errorMsg;
+    char* ip;
+} ReturnData;
 
 int main(int argc, char *argv[])
 {
@@ -104,28 +107,37 @@ int main(int argc, char *argv[])
         CURL *e = curl_easy_init();
         char proxybuf[128];
         char *errormsg = malloc(CURL_ERROR_SIZE);
+        char *proxyIp = malloc(100);
+
+        ReturnData* retData = malloc(sizeof(retData));
+        retData->errorMsg = errormsg;
+        retData->ip = proxyIp;
+
+        //e->data = proxyIp;
         snprintf(proxybuf, sizeof(proxybuf), "%s:%u",
                  proxies[added].ip, proxies[added].port);
-
+        strcpy(proxyIp, proxies[added].ip);
         curl_easy_setopt(e, CURLOPT_URL, "https://www.example.com/");
         curl_easy_setopt(e, CURLOPT_CONNECTTIMEOUT_MS, 30000L);
         curl_easy_setopt(e, CURLOPT_TIMEOUT_MS, 40000L);
         curl_easy_setopt(e, CURLOPT_PROXY, proxybuf);
         curl_easy_setopt(e, CURLOPT_PROXYTYPE, proxies[added].type);
         curl_easy_setopt(e, CURLOPT_ERRORBUFFER, errormsg);
-        curl_easy_setopt(e, CURLOPT_PRIVATE, errormsg);
+        curl_easy_setopt(e, CURLOPT_PRIVATE, retData);
 
         /* send all data to this function  */
         curl_easy_setopt(e, CURLOPT_WRITEFUNCTION, WriteMemoryCallback);
         /* we pass our 'chunk' struct to the callback function */
         curl_easy_setopt(e, CURLOPT_WRITEDATA, (void *)&chunk);
 
+
         curl_multi_add_handle(mh, e);
         still_running++;
         added++;
+
       }
 
-      if(printToConsole) fprintf(stderr, "Perform %d parallel transfers\n", still_running);
+      //if(printToConsole) fprintf(stderr, "Perform %d parallel transfers\n", still_running);
 
       // we start some action by calling perform right away
 
@@ -135,12 +147,16 @@ int main(int argc, char *argv[])
       while ((msg = curl_multi_info_read(mh, &msgs_left))) {
         if (msg->msg == CURLMSG_DONE) {
           CURL *e = msg->easy_handle;
-          char *err;
-          curl_easy_getinfo(e, CURLINFO_PRIVATE, &err);
+          ReturnData* retData;
+          retData = (void*) 0;
+          char *ip;
+          curl_easy_getinfo(e, CURLINFO_PRIVATE, &retData);
+          curl_easy_getinfo(e, CURLINFO_PRIMARY_IP, &ip);
+
           if(msg->data.result != CURLE_OK) {
-              if(printToConsole)fprintf(stderr, "returned: %d - %s\n", msg->data.result, err);
+              if(printToConsole)fprintf(stderr, "%s\t%d\t%s\n", retData->ip, msg->data.result, retData->errorMsg);
           }else{
-              if(printToConsole)fprintf(stderr, "NO ERROR: %d - %s\n", msg->data.result, err);
+              if(printToConsole)fprintf(stderr, "%s\t%d\t%s\n", retData->ip, msg->data.result, retData->errorMsg);
           }
 
           switch(msg->data.result){
@@ -152,7 +168,7 @@ int main(int argc, char *argv[])
               default:errorOther++; break;
           }
 
-          free(err);
+          //free(retData);
           curl_multi_remove_handle(mh, e);
           curl_easy_cleanup(e);
         }
@@ -183,7 +199,7 @@ int main(int argc, char *argv[])
     int errorOther = added - (noError + error7 + error28 + error35 + error56);
 
 
-    if(writeSummeryToFile){
+    if(writeSummaryToFile){
         char now[200];
         char line[50000];
 
@@ -193,14 +209,11 @@ int main(int argc, char *argv[])
         sprintf(now, "%d-%d-%d %d:%d:%d", tm.tm_year + 1900, tm.tm_mon + 1,
                 tm.tm_mday, tm.tm_hour, tm.tm_min, tm.tm_sec);
 
-        // " 2019-02-24 18:12:44  https://www.example.com 1000    3   407 242 23.365744829178 ";
 
-       
         sprintf( line,"%s\t%d\t%d\t%d\t%d\t%d\t%d\t%d\n",
               now, time2, noError, error28 , error7, error35, error56, errorOther);
 
         FILE *pFile2;
-
 
         pFile2 = fopen("cCurlTestLogs.txt", "a");
 
